@@ -1,5 +1,5 @@
 ---
-- name: setup the network(s)
+- name: Setup the network(s)
   docker_network:
     name: '{{ item.name }}'
     api_version: '{{ item.api_version | default("auto") }}'

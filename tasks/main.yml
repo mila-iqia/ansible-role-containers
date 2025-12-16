@@ -1,9 +1,12 @@
 ---
-- include_tasks: registries.yml
+- name: Login to registries
+  ansible.builtin.include_tasks: registries.yml
   when: registries | length > 0
 
-- include_tasks: networks.yml
+- name: Configure networks
+  ansible.builtin.include_tasks: networks.yml
   when: networks | length > 0
 
-- include_tasks: containers.yml
+- name: Configure containers
+  ansible.builtin.include_tasks: containers.yml
   when: containers | length > 0

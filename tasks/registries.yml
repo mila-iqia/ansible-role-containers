@@ -1,5 +1,5 @@
 ---
-- name: log into private registry
+- name: Log into private registry
   docker_login:
     username: '{{ item.username }}'
     password: '{{ item.password }}'

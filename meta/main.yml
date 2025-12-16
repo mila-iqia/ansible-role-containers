@@ -3,6 +3,7 @@ dependencies: []
 
 galaxy_info:
   role_name: containers
+  namespace: mila
   author: hadret
   description: Wrapper role on top of docker_container, docker_network and docker_login.
   license: MIT

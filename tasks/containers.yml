@@ -39,7 +39,6 @@
     groups: "{{ item.groups | default(omit) }}"
     healthcheck: "{{ item.healthcheck | default(omit) }}"
     hostname: "{{ item.hostname | default(omit) }}"
-    ignore_image: '{{ item.ignore_image | default("no") }}'
     image: "{{ item.image | default(omit) }}"
     init: '{{ item.init | default("no") }}'
     interactive: '{{ item.interactive | default("no") }}'
@@ -68,7 +67,6 @@
     privileged: '{{ item.privileged | default("no") }}'
     published_ports: "{{ item.published_ports | default(omit) }}"
     pull: '{{ item.pull | default("no") }}'
-    purge_networks: '{{ item.purge_networks | default("no") }}'
     read_only: '{{ item.read_only | default("no") }}'
     recreate: '{{ item.recreate | default("no") }}'
     restart: '{{ item.restart | default("no") }}'
